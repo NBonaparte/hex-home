@@ -1,0 +1,43 @@
+[links.archlinux]
+  url = "https://archlinux.org"
+  color = "med-blue"
+[links.github]
+  url = "https://github.com"
+[links.gitlab]
+  url = "https://gitlab.com"
+  color = "orange"
+[links.hackaday]
+  url = "https://hackaday.com"
+[links.reddit]
+  url = "https://reddit.com"
+  color = "orange"
+[links.shiori]
+  url = "/shiori"
+  color = "red"
+[links.wiki]
+  url = "/wiki"
+  color = "blue"
+[links.nextcloud]
+  url = "/nextcloud"
+  color = "med-blue"
+[links.gitea]
+  url = "/gitea"
+  color = "green"
+[links.kanboard]
+  url = "/board"
+#[links.bitwarden]
+#  url = "/bitwarden"
+#  color = "dark-blue"
+[links.pihole]
+  url = "/pihole"
+  color = "red"
+[links.miniflux]
+  url = "/miniflux"
+[links.datasette]
+  url = "/datasette"
+  color = "dark-blue"
+[links.lichess]
+  url = "https://lichess.org"
+[links.hackernews]
+  url = "https://news.ycombinator.com"
+  color = "orange"
