@@ -1,9 +1,10 @@
 #!/bin/bash
 python generate.py
-mkdir -p public/
-cp index.html public/
-cp -r fonts/ public/
-cp -r icons/ public/
-cp -r favicon/ public/
-cp *.css public/
-cp *.svg public/
+if [ -z "$out" ]; then out="public/"; fi
+mkdir -p $out/
+cp index.html $out/
+cp -r fonts/ $out/
+cp -r icons/ $out/
+cp -r favicon/ $out/
+cp *.css $out/
+cp *.svg $out/
