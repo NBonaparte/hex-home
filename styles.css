@@ -50,20 +50,18 @@ body {
 .hex {
   grid-column-end: span 2;
   position: relative;
-  /*filter: drop-shadow(0 1px 3px rgba(0,0,0,0.12)) drop-shadow(0 1px 2px rgba(0,0,0,0.24));*/
 }
 .hex::after {
   content:'';
   display:block;
-  padding-bottom: 86.602%;  /* =  100 / tan(60) * 1.5 */
+  padding-bottom: 86.602%;
 }
-.hexIn{
+.hexIn {
   position: absolute;
   width:100%;
-  padding-bottom: 115.470%; /* =  width / sin(60) */
+  padding-bottom: 115.470%;
   overflow: hidden;
   transform: rotate3d(0,0,1,-60deg) skewY(30deg);
-  /*transition: all 0.3s cubic-bezier(0.65, 0, 0.35, 1);*/
 }
 .hexIn * {
   position: absolute;
@@ -85,11 +83,6 @@ body {
   transform: scale(0.5);
 }
 
-.hexIn:hover {
-  /*filter: drop-shadow(0 10px 20px rgba(0,0,0,0.19)) drop-shadow(0 6px 6px rgba(0,0,0,0.23));*/
-  /*transform: rotate3d(0,0,1,-60deg) skewY(30deg) scale(110%);*/
-}
-
 .hexLink:hover {
   background: var(--nord3);
 }
@@ -100,7 +93,7 @@ body {
     padding-bottom: 4.0%;
     max-width: 50vw;
   }
-  .hex:nth-child(13n+8){ /* first hexagon of even rows */
+  .hex:nth-child(13n+8){
     grid-column-start: 2;
   }
 }
