@@ -41,3 +41,6 @@
 [links.hackernews]
   url = "https://news.ycombinator.com"
   color = "orange"
+[links.godbolt]
+  url = "https://godbolt.org"
+  color = "green"

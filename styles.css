@@ -19,6 +19,7 @@ h1 {
 body {
   background-color: var(--nord-1);
   background-image: url("circuit-board.svg");
+  /* alternatives: D-DIN, Barlow */
   font-family: "Cooper Hewitt", sans-serif;
   color: var(--nord6);
 }
