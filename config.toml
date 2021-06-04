@@ -28,9 +28,6 @@
 #[links.bitwarden]
 #  url = "/bitwarden"
 #  color = "dark-blue"
-[links.pihole]
-  url = "/pihole"
-  color = "red"
 [links.miniflux]
   url = "/miniflux"
 [links.datasette]
@@ -43,4 +40,7 @@
   color = "orange"
 [links.godbolt]
   url = "https://godbolt.org"
+  color = "green"
+[links.adguardhome]
+  url = "/agh"
   color = "green"
