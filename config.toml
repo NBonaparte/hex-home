@@ -44,3 +44,6 @@
 [links.adguardhome]
   url = "/agh"
   color = "green"
+[links.3qd]
+  url = "https://3quarksdaily.com"
+  color = "red"
