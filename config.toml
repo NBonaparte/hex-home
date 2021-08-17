@@ -47,3 +47,6 @@
 [links.3qd]
   url = "https://3quarksdaily.com"
   color = "red"
+[links.windy]
+  url = "https://windy.com"
+  color = "red"
