@@ -50,3 +50,6 @@
 [links.windy]
   url = "https://windy.com"
   color = "red"
+[links.osm]
+  url = "https://openstreetmap.org"
+  color = "green"
