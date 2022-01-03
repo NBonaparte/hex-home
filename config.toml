@@ -11,9 +11,9 @@
 [links.reddit]
   url = "https://reddit.com"
   color = "orange"
-[links.shiori]
-  url = "/shiori"
-  color = "red"
+#[links.shiori]
+#  url = "/shiori"
+#  color = "red"
 [links.wiki]
   url = "/wiki"
   color = "blue"
@@ -30,9 +30,9 @@
 #  color = "dark-blue"
 [links.miniflux]
   url = "/miniflux"
-[links.datasette]
-  url = "/datasette"
-  color = "dark-blue"
+#[links.datasette]
+#  url = "/datasette"
+#  color = "dark-blue"
 [links.lichess]
   url = "https://lichess.org"
 [links.hackernews]
@@ -53,3 +53,6 @@
 [links.osm]
   url = "https://openstreetmap.org"
   color = "green"
+[links.storygraph]
+  url = "https://app.thestorygraph.com"
+  color = "aqua"
