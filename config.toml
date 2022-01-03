@@ -56,3 +56,6 @@
 [links.storygraph]
   url = "https://app.thestorygraph.com"
   color = "aqua"
+[links.grafana]
+  url = "/grafana"
+  color = "orange"
