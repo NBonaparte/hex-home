@@ -1,0 +1,143 @@
+@import "nord.css";
+
+@font-face {
+  font-family: "Cooper Hewitt";
+  font-weight: 300;
+  src: local("Cooper Hewitt Light"), local("CooperHewitt-Light"), url("fonts/CooperHewitt-Light.woff2") format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+body {
+  background-color: var(--nord-1);
+  background-image: url("circuit-board.svg");
+  /* alternatives: D-DIN, Barlow */
+  font-family: "Cooper Hewitt", sans-serif;
+  color: var(--nord6);
+}
+
+.head {
+  padding-top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.os {
+  width: 20vh;
+  margin-bottom: 4vh;
+}
+
+#hexGrid {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(10,1fr);
+  padding: 4vh;
+  margin: 0 auto;
+  font-size: 15px;
+  list-style-type: none;
+  overflow:hidden;
+}
+
+.hex {
+  grid-column-end: span 2;
+  position: relative;
+}
+.hex::after {
+  content:'';
+  display:block;
+  padding-bottom: 86.602%;
+}
+.hexIn {
+  position: absolute;
+  width:100%;
+  padding-bottom: 115.470%;
+  overflow: hidden;
+  transform: rotate3d(0,0,1,-60deg) skewY(30deg);
+}
+.hexIn * {
+  position: absolute;
+}
+.hexLink {
+  width: 100%;
+  height: 100%;
+  background: var(--nord1);
+  transform: skewY(-30deg) rotate3d(0,0,1,60deg);
+  transition: background 0.3s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.hex svg {
+  left: -100%;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  margin: auto auto;
+  transform: scale(0.5);
+}
+
+.hexLink:hover {
+  background: var(--nord3);
+}
+
+@media (min-width:1201px) {
+  #hexGrid{
+    grid-template-columns: repeat(14,1fr);
+    padding-bottom: 4.0%;
+    max-width: 50vw;
+  }
+  .hex:nth-child(13n+8){
+    grid-column-start: 2;
+  }
+}
+
+@media (max-width: 1200px) and (min-width:901px) {
+  #hexGrid{
+    padding-bottom: 4.4%;
+  }
+  .hex:nth-child(9n+6){
+    grid-column-start: 2;
+  }
+}
+
+@media (max-width: 900px) {
+  #hexGrid{
+    grid-gap: 10px;
+    grid-template-columns: repeat(8,1fr);
+    padding-bottom: 5.5%;
+    max-width: 75vw;
+  }
+  .hex:nth-child(7n+5){
+    grid-column-start: 2;
+  }
+}
+
+@media(max-width: 600px) {
+  .os {
+    width: 15vh;
+  }
+  .head {
+    padding-top: 2vh;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+}
+
+.red:hover { background-color: var(--nord11); }
+.yellow:hover { background-color: var(--nord13); }
+.green:hover { background-color: var(--nord14); }
+.orange:hover { background-color: var(--nord12); }
+.aqua:hover { background-color: var(--nord7); }
+.blue:hover { background-color: var(--nord8); }
+.med-blue:hover { background-color: var(--nord9); }
+.dark-blue:hover { background-color: var(--nord10); }
+.black:hover { background-color: var(--nord3); }
